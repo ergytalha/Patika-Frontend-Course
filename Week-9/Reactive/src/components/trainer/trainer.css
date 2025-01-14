@@ -1,0 +1,141 @@
+
+#trainers {
+    background-color: var(--background-color-1);
+}
+
+#trainers .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+#trainers .trainers-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+#trainers .trainer {
+    position: relative;
+    display: inline-block;
+}
+
+#trainers .trainer img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 110%;
+    height: 110%;
+    left: 0;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    background-color: var(--primary-color);
+}
+
+#trainers .trainer img {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.trainer-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.trainer:hover .trainer-frame::after {
+    width: 30vh;
+    left: 12px;
+}
+
+.trainer:hover .trainer-frame .side.right {
+    height: 34vh;
+    top: calc(21% - 60px);
+}
+
+.trainer:hover .trainer-frame .side.left {
+    height: 34vh;
+    top: calc(21% - 60px);
+}
+
+
+
+.trainer-frame:before {
+    width: 80px;
+    height: 8px;
+    top: -8px;
+    left: calc(50% - 40px);
+}
+
+.trainer-frame:after {
+    width: 80px;
+    height: 8px;
+    bottom: -4px;
+    left: calc(50% - 40px);
+}
+
+.trainer-frame:before,
+.trainer-frame:after {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.trainer-frame .side.left {
+    width: 8px;
+    height: 120px;
+    left: -8px;
+    top: calc(50% - 60px);
+}
+
+.trainer-frame .side {
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.trainer-frame .side.right {
+    width: 8px;
+    height: 120px;
+    right: -8px;
+    top: calc(50% - 60px);
+}
+
+.trainer-frame .side {
+    position: absolute;
+    background-color: var(--primary-color);
+    transition: all .5s ease;
+}
+
+.trainer-content {
+    color: var(--tema-color-2);
+    position: absolute;
+    left: 16px;
+    width: calc(100% - 32px);
+    bottom: 0;
+    padding: 24px 8px;
+    text-align: center;
+    background-color: var(--primary-color);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    opacity: 0;
+    transition: all .25s linear;
+}
+
+.trainer:hover .trainer-content {
+    bottom: 16px;
+    opacity: 1;
+}
+
+.trainer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 0.5rem 0;
+}
+
+.trainer-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
