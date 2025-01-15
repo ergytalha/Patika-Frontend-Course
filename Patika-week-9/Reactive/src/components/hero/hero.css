@@ -1,0 +1,103 @@
+
+#hero {
+    background-image: url(src/assets/images/hero-man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero .hero-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 280px;
+    padding-bottom: 240px;
+    gap: 12px;
+
+}
+
+#hero .hero-content h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--tema-color-2);
+}
+
+#hero .hero-content p {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #0009;
+    -webkit-backdrop-filter: saturate(180%) blur(4px);
+    backdrop-filter: saturate(180%) blur(4px);
+    color: var(--tema-color-2);
+}
+
+#hero .hero-content .badge {
+    background-color: var(--primary-color);
+    color: var(--tema-color-2);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#hero .btn-group {
+    display: flex;
+}
+
+#hero .hero-content .btn-group :nth-child(1) {
+    margin-right: 2rem;
+    background-color: var(--primary-color);
+    color: var(--tema-color-2);
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#hero .hero-content .btn-group :nth-child(2) {
+    margin-right: 2rem;
+    background-color: rgba(0, 0, 0, 0.332);
+    color: var(--tema-color-2);
+    border: 1px solid var(--tema-color-2);
+    padding: 0.7rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+
+
+#stats {
+    background-color: var(--background-color-1);
+}
+
+#stats .hero-stats {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+#stats .hero-stats .stats {
+    width: 360px;
+    background-color: var(--tema-color-2);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#stats .hero-stats .stats span {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#stats .hero-stats .stats h3 {
+    font-size: 1.8rem;
+}

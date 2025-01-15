@@ -1,0 +1,109 @@
+
+
+
+#bmi-calculator .bmi-content {
+    width: 100%;
+    display: flex;
+    gap: 25rem;
+}
+#bmi-calculator .bmi-result {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    gap: 1rem;
+}
+
+#bmi-calculator .bmi-content .bmi-text {
+    display: inline-block;
+}
+
+#bmi-calculator .bmi-img {
+    text-align: center;
+}
+
+#bmi-calculator .bmi-img h3 {
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    font-weight: 500;
+}
+
+#bmi-calculator .bmi-img img {
+    max-width: fit-content;
+    border-radius: 4px;
+}
+
+#bmi-calculator .bmi-text h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 1.5rem 0;
+}
+
+#bmi-calculator .bmi-text p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--tema-color-1);
+    padding: 1rem 0;
+}
+
+#bmi-calculator .bmi-text span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    line-height: 1.3;
+    color: var(--tema-color-1);
+}
+
+#bmi-calculator .bmi-input {
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#bmi-calculator .bmi-input input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: var(--tema-color-3);
+}
+#bmi-calculator .bmi-input label {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#bmi-calculator .bmi-img {
+    position: relative;
+}
+#bmi-calculator .bmi-arrows span {
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 20px solid var(--secondary-color);
+    position: absolute;
+    transition: .15s ease-in;
+    display: none;
+    bottom: 5%;
+}
+#bmi-calculator .bmi-arrow1 {
+    left: 15%;
+}
+#bmi-calculator .bmi-arrow2 {
+    left: 30%;
+}
+
+#bmi-calculator .bmi-arrow3 {
+    left: 47%;
+}
+
+#bmi-calculator .bmi-arrow4 {
+    left: 64%;
+}
+
+#bmi-calculator .bmi-arrow5 {
+    left: 80%;
+}
+
+#bmi-calculator .active { 
+    display: block !important;
+}
