@@ -46,17 +46,17 @@
 }
 
 .trainer:hover .trainer-frame::after {
-    width: 30vh;
+    width: 25vh;
     left: 12px;
 }
 
 .trainer:hover .trainer-frame .side.right {
-    height: 34vh;
+    height: 25vh;
     top: calc(21% - 60px);
 }
 
 .trainer:hover .trainer-frame .side.left {
-    height: 34vh;
+    height: 25vh;
     top: calc(21% - 60px);
 }
 

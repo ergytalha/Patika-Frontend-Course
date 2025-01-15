@@ -83,7 +83,6 @@
     position: absolute;
     transition: .15s ease-in;
     display: none;
-    bottom: 5%;
 }
 #bmi-calculator .bmi-arrow1 {
     left: 15%;
