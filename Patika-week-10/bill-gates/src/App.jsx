@@ -7,11 +7,10 @@ import "./App.css";
 import Receipt from "./components/receipt/Receipt";
 
 function App() {
-  const [money, setMoney] = useState(100000000000); // Starting money
+  const [money, setMoney] = useState(100000000000); 
   const [receipt, setReceipt] = useState([]);
   const [total, setTotal] = useState(0);
 
-  // Update the total whenever the receipt changes
   useEffect(() => {
     setTotal(
       receipt.reduce((acc, item) => {
@@ -21,7 +20,6 @@ function App() {
     );
   }, [receipt]);
 
-  // Update money whenever the total changes
   useEffect(() => {
     setMoney(100000000000 - total);
   }, [total]);

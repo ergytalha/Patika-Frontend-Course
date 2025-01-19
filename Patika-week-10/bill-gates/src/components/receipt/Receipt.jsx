@@ -1,8 +1,8 @@
 import './style.css';
 
 function Receipt({ receipt, data }) {
-  // Only show the receipt if money is spent (i.e., total is greater than 0)
-  if (receipt.length === 0) return null; // Hide if no items are bought
+
+  if (receipt.length === 0) return null;
 
   return (
     <div className="receipt-container">
