@@ -1,0 +1,22 @@
+.info-content {
+    width: 1000px;
+    margin: 0 auto;
+
+    background-color: #fff;
+}
+
+.info-content h1 {
+    padding: 1rem 0;
+    text-align: center;
+    color: #000;
+}
+
+.info-content .bill-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 123px;
+    object-fit: cover;
+}
