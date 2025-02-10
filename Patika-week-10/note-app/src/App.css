@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  width: 500px;
+  background: #f4f4f4;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+h1 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 65%;
+  padding: 11px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  outline: none;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.colors {
+  display: flex;
+  gap: 10px;
+}
+.color-option {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.color-option:hover {
+  border: 2px solid #333;
+}
+.color-option.yellow { background-color: #FFD700; }
+.color-option.red { background-color: #FF6347; }
+.color-option.green { background-color: #8FBC8F; }
+.color-option.blue { background-color: #87CEFA; }
+.color-option.purple { background-color: #9370DB; }
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.notes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  max-width: 150px;
+  flex-grow: 1;
+  color: white;
+}
+.note.yellow { background-color: #FFD700; color: black; }
+.note.red { background-color: #FF6347; }
+.note.green { background-color: #8FBC8F; }
+.note.blue { background-color: #87CEFA; }
+.note.purple { background-color: #9370DB; }
