@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom right,#000,#2575fc);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+}
